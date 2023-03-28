@@ -6,8 +6,12 @@
 </head>
 
 <body>
+
     <model-viewer src="./assets/kallax.glb" poster="./assets/kallax.webp" shadow-intensity="1" ar camera-controls
         touch-action="pan-y" ar-scale="fixed" alt="A 3D model carousel">
+        <a href="./pages/instructions.html">
+            <h1>arIKEA</h1>
+        </a>
 
         <button slot="ar-button" id="ar-button">
             View in your space
@@ -63,10 +67,37 @@
         }
 
         html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+
+        html,
         body {
             margin: 0;
             padding: 0;
             height: 100%;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-left: 50px;
+            margin-top: 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        a {
+            font-size: 100px;
+            color: black;
+            text-decoration: none;
+            font-weight: 100;
         }
 
         model-viewer {
